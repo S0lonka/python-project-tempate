@@ -1,5 +1,16 @@
-from app.utils.notification import My_notification
+from app.utils.file_utils import *
 
-nt = My_notification()
+# Настройка логгера
+create_logger("main")
+toggle_logging(logger)
 
-nt.create_notification("title", "hi").show()
+
+def main():
+    print("successful")
+
+
+
+
+if __name__ == "__main__":
+    if check_file("app/env/config.env") and check_file("app/env/logger_config.env"):
+        main()

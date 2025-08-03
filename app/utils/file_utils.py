@@ -19,7 +19,7 @@ toggle_logging(logger)
 notyfi = My_notification() 
 
 def check_file(path: str) -> bool:
-    """Проверка что файл существует
+    """Проверка что файл существует(для ENV)
     
     Args:
         path (str) : Относительный путь до файла который нужно проверить.
@@ -45,7 +45,7 @@ def check_file(path: str) -> bool:
 
 def create_file(filepath: str, line_content: list[str]) -> None:
     """Создаёт и записывает заданные линии в файл
-    
+
     Args:
         filepath     (str)       : Путь до целевого файла
         line_content (list[str]) : Массив строк которыми заполнится файл
