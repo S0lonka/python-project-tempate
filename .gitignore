@@ -1,0 +1,14 @@
+.venv
+
+for_me.md
+
+
+
+app/env/
+*.env
+
+*.log
+
+test*
+
+\__pycache__
