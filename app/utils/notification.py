@@ -18,13 +18,18 @@ toggle_logging(logger)
 
 class My_notification:
     """_Класс отправки уведомлений windows_\n
-    - Для начала вызовите <b>.send_notification()</b> - Сбирает содержимое уведомления<br>
+    - Для начала создайте объект класса <b>notyfi = My_notification()</b><br>
+    - После к объекту класса добавьте <b>.send_notification()</b> - Сбирает содержимое уведомления<br>
     - Если нужно добавьте действия <b>.add_actions()</b> - Добавляет кнопку(например переход по ссылке)<br>
     - Для отправки сообщение завершите командой <b>.show()</b> - Отправляет собранное уведомление<br>\n
+    
     ПРИМЕР ИСПОЛЬЗОВАНИЯ:<br>
-        (notyfi
-        .create_notification("Title", "Hello world", duration="long")
-        .show())
+    ```python
+    notyfi = My_notification()
+    (notyfi
+    .create_notification("Title", "Hello world", duration="long")
+    .show())
+    ```
     """
     
     def __init__(self):

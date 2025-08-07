@@ -1,7 +1,7 @@
 from app.utils.file_utils import *
 
 # Настройка логгера
-create_logger("main")
+logger = create_logger("main")
 toggle_logging(logger)
 
 
