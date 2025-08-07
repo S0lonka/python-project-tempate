@@ -14,8 +14,9 @@ config_logger_env_lines = [
     "",
     "MAIN               = True",
     "NOTIFICATION       = True",
-    "",
-    "",
-    "",
-    ""
+    "FILE_UTILS         = True",
+    "GENERAL_UTILS      = True",
+    "CONFIG_UTILS       = True",
+    "BROWSER_ACTIONS    = True",
+    "TRAY               = True"
 ]
