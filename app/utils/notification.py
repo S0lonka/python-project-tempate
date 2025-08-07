@@ -41,7 +41,7 @@ class My_notification:
                 logger.error(f"Ошибка в поиске файла: {e}")
                 self.icon_path = ""
             except Exception as e:
-                print(f"Неожиданная ошибка: {e}")
+                logger.error(f"Неожиданная ошибка: {e}")
                 self.icon_path = ""
         else:
             self.icon_path = ""
